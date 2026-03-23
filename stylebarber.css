@@ -90,20 +90,143 @@ a:hover{
     font-size:14px;
 }
 .menu{
-    max-width: 768px;
+    display:grid;
+    max-width:768px;
+    width:100%;
+    height: 550px;
+    background-color:#c8ad7ee1;
+    position:absolute;
+    left:850px;
+    top:1960px;
     margin:auto;
-    
+}
+.item{
+    display: flex;
+    align-items:center;
+    margin-top:25px;
+
 }
 .top{
-    display:flex;
-    align-items:center;
-
+    display:grid;
+    margin:auto;
 }
 .top h3{
     font-size:23px;
     margin:0;
     white-space: nowrap;
 }
+.top::after{
+    content:"";
+    flex:1;
+    border-bottom:1px solid #fceb05;
+    margin:0 10px;
+}
+.top span{
+    font-size: 28px;
+    font-weight: bold;
+    color: #a0ff7b;
+    white-space: nowrap;
+    margin-left:470px;
+}
+.top p{
+    font-size:13px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.midel p{
+    font-size:13px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.last p{
+    font-size:13px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.midel {
+    display:grid;
+    margin:auto;
+}
+.midel h3{
+    font-size:23px;
+    margin:0;
+    white-space: nowrap;
+}
+.midel::after{
+    content:"";
+    flex:1;
+    border-bottom:1px solid #fceb05;
+    margin:0 10px;
+}
+.midel span{
+    font-size: 28px;
+    font-weight: bold;
+    color: #a0ff7b;
+    white-space: nowrap;
+    margin-left:470px;
+}
+.last{
+    display:grid;
+    margin:auto;
+}
+.last h3{
+    font-size:23px;
+    margin:0;
+    white-space: nowrap;
+}
+.last::after{
+    content:"";
+    flex:1;
+    border-bottom:1px solid #fceb05;
+    margin:0 10px;
+}
+.last span{
+    font-size: 28px;
+    font-weight: bold;
+    color: #a0ff7b;
+    white-space: nowrap;
+    margin-left:470px;
+}
+.locationcontent {
+    position:absolute;
+    right:14.5%;
+}
+.locationcontent h2{
+    font-size:30px;
+    font-weight: bold;
+    color:white;
+}
+.mapImage{
+    display:inline-flex;
+}
+.details{
+    display:grid;
+    background-color: #ecd8b5;
+
+}
+    
+.details img{
+    padding:20px;
+}
+
+.details h4{
+    text-align: center;
+    color:#ffae18fd;
+}
+.details h5{
+    margin-left:10px;
+    font-size:20px;
+    font-weight: normal;
+}
+.details p{
+    margin-left:10px;
+    font-size:20px;
+    font-weight: bold;
+}
+.details span{
+    white-space: nowrap;
+    text-align: right;
+    display:grid;
+    margin-right:10px;
+}
+
 @media screen and (max-width:768px)  {
     .content{
         display: flex;;
@@ -117,7 +240,7 @@ a:hover{
     }
     .centercontent img{
         /* padding-right:300px; */
-        width:768px;
+        width:603px;
         height:auto;
     }
     .titlecontent h1{
@@ -128,5 +251,104 @@ a:hover{
     }
     .textcontent h2{
         font-size:35px;
+    }
+    .servicescontent{
+        padding:0;
+    }
+    .servicescontent h2,p{
+        text-align:center;
+    }
+    .servicescontent img{
+        display:flex;
+        justify-content: center;
+        margin:auto;
+    }
+    .menu{
+        position:relative;
+        top:0;
+        left:0;
+    }
+    .top p{
+        padding-left: 30px;
+        text-align: left;
+    }
+    .top h3{
+        padding-left: 30px;
+        
+    }
+    .top span{
+        padding-right: 30px;
+    }
+    .midel p{
+        padding-left: 30px;
+        text-align: left;
+    }
+    .midel h3{
+        padding-left: 30px;
+        
+    }
+    .midel span{
+        padding-right: 30px;
+    }
+    .last p{
+        padding-left: 30px;
+        text-align: left;
+    }
+    .last h3{
+        padding-left: 30px;
+        
+    }
+    .last span{
+        padding-right: 30px;
+    }
+    .mapImage{
+        max-width: 468px;
+        width:50%;
+        height: auto;
+        margin-right:80px;
+        
+    }
+    .details{
+        position:fixed;
+        left:510px;
+        top:0;
+        width:550px;
+        height: 100%;
+        padding:5px;
+        transition:0.7s;
+    }
+    .details.active{
+        left:0;
+    }
+    .details h4{
+        margin-right:150px;
+    }
+    .details p{
+        display:flex;
+        
+    }
+    .details span{
+        display:flex;
+        position:relative;
+        left:30px;
+        
+    }
+    .toggle-btn {
+        position: fixed;
+        top: 20px;
+        left: 10px;
+        background: #333;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    .mapImage img{
+        width:645px;
+        height: auto;
+    }
+    .toggle-btn{
+        position:absolute;
+        margin-top:30%;
     }
 }

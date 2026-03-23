@@ -35,22 +35,69 @@
         <p>From long, layered cuts to shorter, edgier styles</p>
         <img src="/img/barberincontent.jpg">
         <div class="menu">
-            <div class="top">
-                <h3>Haircut</h3>
-                <span>20DH</span>
+            <div class="item">
+                <div class="top">
+                    <h3>Haircut</h3>
+                    <span>20DH</span>
+                    <p>Enjoy a personalized haircut tailored to match your style and personality. <br>
+                        Whether you prefer a clean fade, a classic cut, or something modern,<br>
+                        every detail is handled with precision to give you a fresh,<br>
+                        confident look that stands out.</p>
+                </div>
             </div>
-            <div class="midel">
-                <h3>Shave</h3>
-                <span>10DH</span>
+            <div class="item">
+                <div class="midel">
+                    <h3>Shave</h3>
+                    <span>10DH</span>
+                    <p>Experience the comfort of a smooth,<br>
+                        professional shave that leaves your skin feeling refreshed and revitalized. <br>
+                        Using high-quality tools and techniques,<br>
+                        we ensure a clean finish with maximum comfort and relaxation.</p>
+                </div>
             </div>
-            <div class="last">
-                <h3>Haircut and Beard Trim</h3>
-                <span>20DH</span>
+            
+            <div class="item">
+                <div class="last">
+                    <h3>Haircut and Beard Trim</h3>
+                    <span>20DH</span>
+                    <p>Get the complete grooming experience with a haircut and beard trim combo. <br>
+                        Your hair and beard are carefully styled to complement each other, giving you a sharp,<br>
+                        well-groomed appearance that boosts your confidence and keeps you looking your best.</p>
+                </div>
             </div>
         </div>
-        
-        
-        
     </div>
+    <div class="locationcontent">
+        <h2>LOCATION IN KHOURIBGA CITY</h2>
+        <div class="mapImage">
+            <img src="/img/locationbarber.png" width="990px">
+            <div class="details" id="details">
+                <div class="toggle-btn" onclick="toggleSidebar()">➡</div>
+                <img src="/img/youssef barber .png" width="300px">
+                <h4>52 Rue Kouidir Khouribga 25000 Maroc</h4>
+                <h5>Tele 0650415130</h5>
+                
+                <p>Monday</p>
+                <span>9AM - 10PM</span>
+                <p>Tuesday</p>
+                <span>9AM - 10PM</span>
+                <p>Wensday</p>
+                <span>9AM - 10PM</span>
+                <p>Thursday</p>
+                <span>9AM - 10PM</span>
+                <p>Friday</p>
+                <span>9AM - 10PM</span>
+                <p>saturday</p>
+                <span>9AM - 10PM</span>
+                <p>Sunday</p>
+                <span>10AM - 9PM</span>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleSidebar() {
+        document.getElementById("details").classList.toggle("active");
+        }
+    </script>
 </body>
 </html>
