@@ -302,18 +302,16 @@ a:hover{
         padding-right: 30px;
     }
     .mapImage{
-        max-width: 468px;
-        width:50%;
+        max-width: 568px;
+        width:100%;
         height: auto;
-        margin-right:80px;
-        
     }
     .details{
         position:fixed;
         left:510px;
         top:0;
         width:550px;
-        height: 100%;
+        height: auto;
         padding:5px;
         transition:0.7s;
     }
@@ -322,15 +320,23 @@ a:hover{
     }
     .details h4{
         margin-right:150px;
+        
     }
     .details p{
         display:flex;
+        display:flex;
+        align-items: flex-start;
+        height:0;
         
     }
     .details span{
         display:flex;
         position:relative;
         left:30px;
+        display:flex;
+        align-items: flex-start;
+        height:0px;
+        left:20%;
         
     }
     .toggle-btn {
@@ -343,8 +349,9 @@ a:hover{
         cursor: pointer;
         border-radius: 5px;
     }
+    
     .mapImage img{
-        width:645px;
+        width:500px;
         height: auto;
     }
     .toggle-btn{
